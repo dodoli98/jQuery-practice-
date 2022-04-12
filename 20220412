@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device=device-width">
+    <link rel="stylesheet" href="reset.css">
+    <title>Exercise</title>
+    <style>
+        #circle {
+            width: 400px;
+            height: 400px;
+            line-height: 400px;
+            text-align: center;
+            background-color: gray;
+            margin: 0 auto;
+        }
+
+    </style>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+           window.setTimeout(function() {
+               $("#circle").css("border-radius", "50%");
+           }, 2000);
+       });
+
+    </script>
+</head>
+<body>
+    <div id=circle>Circle</div>
+</body>
+</html>
